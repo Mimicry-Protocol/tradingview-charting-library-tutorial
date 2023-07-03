@@ -5,6 +5,11 @@
 > This repository contains sample code for a tutorial on connecting data via the Datafeed API.
 > You can find the full step-by-step guide in the [Charting Library documentation].
 
+## Installation
+Run `git submodule update --init --recursive` to download the Charting Library.
+Run `yarn install` to install dependencies.
+Run `yarn start` to start the development server.
+
 ## What is Charting Library
 
 Charting Library is a standalone solution that you can download, host on your servers, connect your own data to,
