@@ -11,6 +11,13 @@ window.tvWidget = new TradingView.widget({
 	library_path: '../charting_library_cloned_data/charting_library/',
 	autosize: true,
 	locale: 'en',
+	timeframe: '6M',
+	custom_font_family: "'Roboto', monospace",
+	loading_screen: { backgroundColor: "#ffffff" },
+	theme: "light",
+
+
+	// https://www.tradingview.com/charting-library-docs/latest/customization/Featuresets
 	mobile: {
 		disabled_features: [
 			"left_toolbar", 
@@ -32,10 +39,8 @@ window.tvWidget = new TradingView.widget({
 		"side_toolbar_in_fullscreen_mode",
 		"display_legend_on_all_charts",
 	],
-	timeframe: '6M',
-	custom_font_family: "'Roboto', monospace",
-	loading_screen: { backgroundColor: "#ffffff" },
-	theme: "light",
+
+	// https://www.tradingview.com/charting-library-docs/latest/customization/overrides/chart-overrides
     overrides: {
 		"paneProperties.backgroundType": "gradient",
         "paneProperties.backgroundGradientStartColor": "#FFFFFF",
@@ -48,5 +53,7 @@ window.tvWidget = new TradingView.widget({
 		"paneProperties.legendProperties.showStudyTitles": false,
 		"paneProperties.legendProperties.showStudyValues": false,
     },
+
+	// https://www.tradingview.com/charting-library-docs/latest/customization/styles/
 	// custom_css_url: 'css/style.css',
 });
